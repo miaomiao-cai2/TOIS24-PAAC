@@ -15,11 +15,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import random
 import os
-os.chdir('/home/cmm/ICML22/')
-import sys
-sys.path.append('..')
-sys.path.append('/home/cmm/ICML22/')
-sys.path.append('/home/cmm/ICML22/code/')
 import metrics, dataloader, utils, val,eval,mini_batch_test
 import ast
 
@@ -63,8 +58,8 @@ def main_args():
     # args.add_argument('--result_path', default='/home/d1/cmm/ICML22/IID_result', type=str)
 
     ##OOD
-    args.add_argument('--dataset_path', default='/home/cmm/ICML22/OOD_Data', type=str)
-    args.add_argument('--result_path', default='/home/d1/cmm/ICML22/OOD_result', type=str)
+    args.add_argument('--dataset_path', default='./Data', type=str)
+    args.add_argument('--result_path', default='OOD_result', type=str)
 
     args.add_argument('--bpr_num_neg', default=1, type=int)
     args.add_argument('--split_list', default='[0.4]', type=str)
