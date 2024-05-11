@@ -70,7 +70,7 @@ def main_args():
     args.add_argument('--batch_size', default=2048, type=int)
     args.add_argument('--layers_list', default='[6]', type=str)
     args.add_argument('--eps', default=0.2, type=float)
-    args.add_argument('--cl_rate_list', default='[0.01,0.1,0.5,1,5,10,20]', type=str)
+    args.add_argument('--cl_rate_list', default='[5]', type=str)
     args.add_argument('--temperature_list', default='[0.2]', type=str)
     args.add_argument('--seed', default=12345, type=int)
     args.add_argument('--align_reg_list', default='[400]', type=str)
